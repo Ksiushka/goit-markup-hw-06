@@ -414,6 +414,23 @@
 		</footer>
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
+				<form action="">
+					<h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+					<label for="user">Ім'я</label>
+					<input type="text" name="user" id="user">
+					<label for="phone">Телефон</label>
+					<input type="tel" name="phone" id="phone">
+					<label for="mail">Пошта</label>
+					<input type="email" name="mail" id="mail">
+					<label for="comment">Коментар</label>
+					<input type="text" name="comment" id="comment">
+					
+					<input type="checkbox" name="conditions" value="agreement" id="agreement">
+					<label for="agreement">Погоджуюся з розсилкою та приймаю Умови договору</label>
+
+					<button type="submit" class="modal-submit">Відправити</button>
+					
+				</form>
 				<button class="close" data-modal-close>
 					<svg class="svg-close" width="11" height="11">
 						<use href="./images/symbol-defs5.svg#icon-close-black-18dp-2-1"></use>
