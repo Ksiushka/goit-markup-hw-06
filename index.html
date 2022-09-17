@@ -105,24 +105,23 @@
 				<div class="container">
 					<h2 class="section-title">Чим ми займаємося</h2>
 					<ul>
-						
 						<li class="WeDo-overley">
 							<div class="decktop">
-							<img class="app-title" src="./images/logo.jpg" alt="руки,клавиатура,экран" width="370" />
-							<p class="mobil-apps">Десктопні додатки</p>
+								<img class="app-title" src="./images/logo.jpg" alt="руки,клавиатура,экран" width="370" />
+								<p class="mobil-apps">Десктопні додатки</p>
 							</div>
 						</li>
-						
+
 						<li>
 							<div class="mobil">
-							<img src="./images/logo1.jpg" alt="телефон у руці" width="370" />
-							<p class="mobil-apps">Мобільні додатки</p>
+								<img src="./images/logo1.jpg" alt="телефон у руці" width="370" />
+								<p class="mobil-apps">Мобільні додатки</p>
 							</div>
 						</li>
 						<li>
 							<div class="mobil">
-							<img src="./images/logo2.jpg" alt="планшет у руці" width="370" />
-							<p class="mobil-apps">Дизайнерські рішення</p>
+								<img src="./images/logo2.jpg" alt="планшет у руці" width="370" />
+								<p class="mobil-apps">Дизайнерські рішення</p>
 							</div>
 						</li>
 					</ul>
@@ -410,29 +409,52 @@
 						</li>
 					</ul>
 				</div>
+				<div class="footer-follow">
+					<form action="" class="form2">
+						<p>Підпишіться на розсилку</p>
+						<div class="footer-form">
+							<div class="form-follow">
+								<label for="mail"></label>
+								<input type="email" name="mail" id="mail" placeholder="E-mail" />
+							</div>
+							<button class="follow">Підписатися</button>
+						</div>
+					</form>
+				</div>
 			</div>
 		</footer>
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<form action="">
 					<h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
-					<label for="user">Ім'я</label>
-					<input type="text" name="user" id="user">
-					<label for="phone">Телефон</label>
-					<input type="tel" name="phone" id="phone">
-					<label for="mail">Пошта</label>
-					<input type="email" name="mail" id="mail">
-					<label for="comment">Коментар</label>
-					<input type="text" name="comment" id="comment">
-					
-					<input type="checkbox" name="conditions" value="agreement" id="agreement">
-					<label for="agreement">Погоджуюся з розсилкою та приймаю Умови договору</label>
+					<div class="form-field">
+						<label for="user">Ім'я</label>
+						<input type="text" name="user" id="user" />
+					</div>
+					<div class="form-field">
+						<label for="phone">Телефон</label>
+						<input type="tel" name="phone" id="phone" />
+					</div>
+					<div class="form-field">
+						<label for="mail">Пошта</label>
+						<input type="email" name="mail" id="mail" />
+					</div>
+					<div class="form-comment">
+						<label for="comment">Коментар</label>
+						<textarea type="text" name="comment" id="comment" placeholder="Введіть текст"></textarea>
+					</div>
+					<div class="conditions">
+						<input type="checkbox" name="conditions" value="agreement" id="agreement" />
+						<label for="agreement">
+							Погоджуюся з розсилкою та приймаю
+							<a href="" class="conditions-link">Умови договору</a>
+						</label>
+					</div>
 
 					<button type="submit" class="modal-submit">Відправити</button>
-					
 				</form>
 				<button class="close" data-modal-close>
-					<svg class="svg-close" width="11" height="11">
+					<svg class="svg-close" width="30" height="30">
 						<use href="./images/symbol-defs5.svg#icon-close-black-18dp-2-1"></use>
 					</svg>
 				</button>
