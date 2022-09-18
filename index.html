@@ -417,7 +417,9 @@
 								<label for="mail"></label>
 								<input type="email" name="mail" id="mail" placeholder="E-mail" />
 							</div>
-							<button class="follow">Підписатися</button>
+							<button class="follow">Підписатися
+								<img class="follow-icon" src="./images/icon send (1).svg" alt="иконка отправить" width="24"/>
+							</button>
 						</div>
 					</form>
 				</div>
@@ -427,17 +429,27 @@
 			<div class="modal">
 				<form action="">
 					<h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
-					<div class="form-field">
+					<div class="form-field input-name">
 						<label for="user">Ім'я</label>
-						<input type="text" name="user" id="user" />
+						<input class="form-input" type="text" name="user" id="user" />
+						<svg class="form-icon-phone">
+							<use href="./images/symbol-defs7.svg#icon-person-black-18dp-1"></use>
+						</svg>
 					</div>
-					<div class="form-field">
+					<div class="form-field input-phone">
 						<label for="phone">Телефон</label>
+						
 						<input type="tel" name="phone" id="phone" />
+						<svg class="form-icon-phone">
+							<use href="./images/symbol-defs7.svg#icon-phone-black-18dp-1"></use>
+						</svg>
 					</div>
-					<div class="form-field">
+					<div class="form-field input-mail">
 						<label for="mail">Пошта</label>
 						<input type="email" name="mail" id="mail" />
+						<svg class="form-icon-phone">
+							<use href="./images/symbol-defs7.svg#icon-email-black-18dp-1"></use>
+						</svg>
 					</div>
 					<div class="form-comment">
 						<label for="comment">Коментар</label>
