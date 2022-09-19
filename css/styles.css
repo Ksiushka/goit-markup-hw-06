@@ -946,23 +946,23 @@ form {
 
 .follow {
 	color: var(--hero-text-color);
-		background-color: var(--accent-color);
-		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-		width: 200px;
-		height: 50px;
-		font-weight: 700;
-		font-size: 16px;
-		line-height: 1.9;
-		letter-spacing: 0.06em;
-		cursor: pointer;
-		border-radius: 4px;
-		padding: 10px 52px;
-		margin-left: 12px;
-		justify-content: center;
-		display: flex;
-		align-items: center;
-		border: none;
-		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	background-color: var(--accent-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	width: 200px;
+	height: 50px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.9;
+	letter-spacing: 0.06em;
+	cursor: pointer;
+	border-radius: 4px;
+	padding: 10px 52px;
+	margin-left: 12px;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	border: none;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .follow:hover,
@@ -1034,10 +1034,52 @@ form {
 	position: relative;
 }
 
-.form-input:hover~use,
-.form-input:focus~use {
+.form-input:hover,
+.form-input:focus {
 	color: var(--accent-color);
 	border-color: var(--accent-color);
 }
 
+
+.form-field:focus-within>.form-icon-phone {
+	background-color: #188CE8;
+}
+
+.form-input:hover {
+	border-color: var(--accent-color);
+}
+
+.checkbox {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.checkbox-icon {
+	display: inline-block;
+	width: 16px;
+	height: 15px;
+	border: 2px solid var(--main-text-color);
+	border-radius: 2px;
+	margin-right: 8px;
+}
+
+.checkbox-lable {
+	display: flex;
+	align-items: center;
+}
+
+.checkbox:checked + .checkbox-icon {
+	background-image: url(../images/icon\ check.svg);
+	border-color: var(--accent-color);
+	background-size: contain;
+	background-origin: border-box;
+}
  
