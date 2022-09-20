@@ -875,6 +875,7 @@ form {
 	flex-direction: column;
 	margin-bottom: 10px;
 	height: 58px;
+	transition: bordeer-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field label, .form-comment label {
@@ -888,9 +889,11 @@ form {
 }
 
 .form-field input {
-	height: 58px;
+	height: 40px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
+	outline: none;
+	padding-left: 42px;
 }
 
 .form-comment {
@@ -907,6 +910,7 @@ form {
 	border-radius: 4px;
 	padding-top: 12px;
 	padding-left: 16px;
+	outline: none;
 }
 
 .form-comment textarea::placeholder {
@@ -942,6 +946,7 @@ form {
 
 .conditions-link {
 	color: var(--accent-color);
+	margin-left: 4px;
 }
 
 .follow {
@@ -958,6 +963,7 @@ form {
 	border-radius: 4px;
 	padding: 10px 52px;
 	margin-left: 12px;
+	margin-top: 20px;
 	justify-content: center;
 	display: flex;
 	align-items: center;
@@ -982,27 +988,19 @@ form {
 }
 
 .footer-follow {
-	display: flex;
-	justify-content: center;
 	margin-left: auto;
 }
 
 .form-follow input {
 	width: 358px;
 	height: 50px;
+	margin-top: 20px;
+	padding-left: 16px;
 	
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
 	background: #2F303A;
-}
-
-.form2 p {
-	font-size: 14px;
-	line-height: 16px;
-	letter-spacing: 0.03em;
-	text-transform: uppercase;
-	margin-bottom: 20px;
 	color: var(--hero-text-color);
 }
 
@@ -1014,7 +1012,6 @@ form {
 	font-size: 16px;
 	line-height: 1.25;
 	padding-top: 15px;
-	padding-left: 16px;
 }
 
 .follow-icon {
@@ -1028,24 +1025,21 @@ form {
 	display: inline-block;
 	width: 18px;
 	height: 18px;
+	fill: var(--main-text-color);
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-phone, .input-name, .input-mail {
 	position: relative;
 }
 
+.form-field:focus-within>.form-icon-phone,
+.form-field:hover>.form-icon-phone {
+	fill: var(--accent-color);
+}
+
 .form-input:hover,
 .form-input:focus {
-	color: var(--accent-color);
-	border-color: var(--accent-color);
-}
-
-
-.form-field:focus-within>.form-icon-phone {
-	background-color: #188CE8;
-}
-
-.form-input:hover {
 	border-color: var(--accent-color);
 }
 
