@@ -875,7 +875,10 @@ form {
 	flex-direction: column;
 	margin-bottom: 10px;
 	height: 58px;
-	transition: bordeer-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input {
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field label, .form-comment label {
@@ -963,7 +966,6 @@ form {
 	border-radius: 4px;
 	padding: 10px 52px;
 	margin-left: 12px;
-	margin-top: 20px;
 	justify-content: center;
 	display: flex;
 	align-items: center;
@@ -978,6 +980,7 @@ form {
 
 .footer-form {
 	display: flex;
+	margin-top: 20px;
 }
 
 .form2 {
@@ -994,7 +997,6 @@ form {
 .form-follow input {
 	width: 358px;
 	height: 50px;
-	margin-top: 20px;
 	padding-left: 16px;
 	
 	border: 1px solid rgba(255, 255, 255, 0.3);
